@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+/* CELULAR */
+
+/* Variaveis */
+
+:root {
+
+    /* cores */
+
+    --cor-laranja: #ffa500; 
+    --cor-laranja-fosco: #BF8D30;
+    --cor-marrom: #806940;
+    --cor-marrom-escuro: #403A30;
+
+}
+
+/* Global */
+
+* {
+    /*fonte*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+
+    /* controle de margem global */
+    margin: 0px; 
+    padding: 0px; 
+    box-sizing: border-box;
+}
+
+/* Geral */
+
+body , html {
+    /* plano de fundo */
+    background-color: #b37400; /*igual*/
+}
+
+/* Conteúdo */
+
+/*Section*/
+
+main {
+    /* tamanho */
+    width: 100vw;
+    height: 100vh;
+    /* posição */
+    position: relative;
+}
+
+section#tela {
+    /*posição*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    /* plano de fundo */
+    background-color: white;
+    border-radius: 10px;
+
+    /* tamanho */
+    width: 250px;
+    height: 515px;
+
+    /* esconder imagem no topo borda arredondada */
+    overflow: hidden;
+
+    /* animação */
+    transition: width 0.3s , height 0.3s;
+    transition-timing-function: ease;
+
+    /* translate */
+    transform: translate(-50% , -50%);
+}
+
+/*Div*/
+
+/*div campo */
+
+form > div.campo {
+    /*caixa*/
+    display: block;
+    /*fundo*/
+    background-color: #403A30;
+    /*tamanho*/
+    width: 100%;
+    height: 40px;
+    /*borda*/
+    border-radius: 8px;
+    border: 2px solid #403A30;
+    /*margem*/
+    margin: 5px 0px;
+}
+
+div.campo > input{
+    /* cor fundo */
+    background-color: #ffd588;
+    /* tamanho */
+    width: calc(100% - 45px);
+    height: 100%;
+    /* padding */
+    padding: 2px;
+    /*borda */
+    border: none;
+    border-radius: 8px;
+    /* transform */
+    transform: translateY(-12px);
+    /* tamanho letra */
+    font-size: 1em;
+}
+
+div.campo > span {
+    /*cor*/
+    color: white;
+    /*padding*/
+    padding: 5px;
+    /*tamanho letra*/
+    font-size: 2em;
+    /*tamanho*/
+    width: 40px;
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+/*div-imagem*/
+
+div#imagem {
+    /* imagem de fundo */
+    background-image: url('../imagens/abobora-fundo-2.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    /* tamanho */
+    height: 200px;
+
+    /* sombra */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+
+}
+
+/*div-form*/
+
+div#form {
+    display: block;
+    padding: 10px;
+}
+
+div#form > h1 {
+    /* alinhamento */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#form > p {
+    /*tamanho letra*/
+    font-size: 0.8em;
+}
+
+label {
+    display: none;
+}
+
+/* Botões Entrar e Esqueci a Senha */
+
+input[type=submit] {
+    /*caixa*/
+    display: block;
+    /*cor e borda*/
+    background-color: var(--cor-laranja-fosco);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    /* tamanho */
+    width: 100%;
+    height: 40px;
+    /*fonte*/
+    font-size: 1em;
+}
+
+input[type=submit]:hover {
+    background-color: #8b5b01;
+    cursor: pointer;
+}
+
+a {
+    /*caixa*/
+    display: block;
+    /*borda e cor*/
+    border: 1px solid var(--cor-laranja-fosco);
+    color: #754c00;
+    border-radius: 5px;
+    /*texto e decoração*/
+    text-decoration: none;
+    text-align: center;
+    /*padding e margem*/
+    padding-top: 7px;
+    margin-top: 7px;
+     /* tamanho letra*/
+     font-size: 1em;
+     /*tamanho*/
+     width: 100%;
+     height: 40px;
+    
+}
+
+ a > span#botao {
+    /* tamanho letra */
+    font-size: 0.8em;
+}
+
+a:hover {
+    background-color: #ffc455;
+}
+
